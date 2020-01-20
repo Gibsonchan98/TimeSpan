@@ -2,24 +2,15 @@
 
 Goals: Understanding operator overloading and friends
 
-Design and implement TimeSpan class which represents a duration in hours,
-minutes and seconds.
-```$xslt
-Displayed       Meaning
-2:12:07         2 hours, 12 minutes, 7 seconds
--0:10:43        Minus 10 minutes and 43 seconds
-```
+- This TimeSpan class represents hours, minutes, and seconds. It's displayed as HH:MM:SS. Operator were overloaded to facilitate interactions between different timespans. 
 
-The seconds and minutes have to be between 0 and 59.
-The hours can be 0 to any number.
-When TimeSpan is printed, the minutes and seconds (fixed 4/4) 
-should always have 2 digits. 
-The constructor for TimeSpan can take 0, 1, 2, or 3 parameters.
-In addition to integer value, the constructor should also be able to handle double values and convert them as accurately as possible
-
+### Functions Included 
 ```$xslt
-TimeSpan(1.5, -10, 93)	same as 1:21:33
-TimeSpan(1.5)		    same as 1:30:00
+ - It can add another timespan to already exisiting one.
+ - It can subtract another timespan to already exisiting one.
+ - It can multiply a timespan by any given number.
+ - It can take in doubles and adjust the numbers to represent a proper timeclock.
+ - It can also compare different timespans (<, > , <=, >=, == , != ). 
 ``` 
 
 ## Included Files
