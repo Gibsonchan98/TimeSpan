@@ -1,0 +1,43 @@
+Mon Jan 20 00:47:23 PST 2020
+*** compiling with clang++ to create an executable called myprogram
+clang version 7.0.1 (tags/RELEASE_701/final)
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /opt/rh/llvm-toolset-7.0/root/usr/bin
+*** running clang-tidy using options from .clang-tidy
+LLVM (http://llvm.org/):
+  LLVM version 7.0.1
+  Optimized build.
+  Default target: x86_64-unknown-linux-gnu
+  Host CPU: broadwell
+9123 warnings generated.
+Suppressed 9123 warnings (9123 in non-user code).
+Use -header-filter=.* to display errors from all non-system headers. Use -system-headers to display errors from system headers as well.
+*** running myprogram
+1:20:30
+3:38:30
+1:59:00
+0:00:04
+0:57:36
+5:59:08
+1:20:30 == 1:20:30
+1:20:30 != 1:20:30
+1:20:30 != 0:00:00
+4:01:30
+4:01:30
+6:42:30 == 6:42:30
+6:42:30 == 6:42:30
+1:20:30 == 1:20:30
+0:00:00 == 0:00:00
+0:00:00 == 0:00:00
+-0:00:01
+-5:00:03
+1:15:30 >= 1:02:09
+!(1:15:30 <= 1:02:09)
+1:15:30 != 2:03:10
+1:15:30 >= 0:14:29
+1:15:30 > -0:01:08
+!(0:26:42 < 1:02:09)
+Passed all tests. Done.
+*** cleaning up, deleting myprogram
+Mon Jan 20 00:47:27 PST 2020

@@ -17,7 +17,7 @@ public:
     //destructor
     virtual ~TimeSpan();
     //sets time if values are negative
-    void setTime(const float& h, float& m, float& s);
+    void setTime(const float& h, const float& m, const float& s);
     // add
     TimeSpan operator+(const TimeSpan& timespan) const;
     //add number given
